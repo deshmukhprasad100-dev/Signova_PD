@@ -1,10 +1,10 @@
-# Yap & Render — Speech/Text to Indian Sign Language (ISL) Translator
+# Signova — Speech/Text to Indian Sign Language (ISL) Translator
 
-Yap converts spoken or typed English/Hindi into Indian Sign Language, signed live by a 3D avatar in the browser. Built for SIH 2026.
+Signova converts spoken or typed English/Hindi into Indian Sign Language, signed live by a 3D avatar in the browser. Built for SIH 2026.
 
 ## Demo
 
-[![Yap & Render demo: typed English is translated to ISL gloss and signed by the 3D avatar](docs/demo/yap-render-demo.gif)](docs/demo/yap-render-demo.mp4)
+[![Signova demo: typed English is translated to ISL gloss and signed by the 3D avatar](docs/demo/yap-render-demo.gif)](docs/demo/yap-render-demo.mp4)
 
 ▶ **[Watch the full demo video (MP4, 2 min)](docs/demo/yap-render-demo.mp4)** — typing sentences, quick signs, A–Z fingerspelling for unknown words, switching to the Human avatar, and the full-canvas view. Recorded with the built-in offline translator (no Gemini key).
 
@@ -19,7 +19,7 @@ Yap converts spoken or typed English/Hindi into Indian Sign Language, signed liv
 <a href="docs/architecture/yap-render-architecture-walkthrough.mp4">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/architecture/yap-render-architecture-trace-dark.gif" />
-    <img src="docs/architecture/yap-render-architecture-trace-light.gif" alt="Yap & Render runtime architecture: browser input and translation, the Next.js API route, and the Gemini fallback path" width="900" />
+    <img src="docs/architecture/yap-render-architecture-trace-light.gif" alt="Signova runtime architecture: browser input and translation, the Next.js API route, and the Gemini fallback path" width="900" />
   </picture>
 </a>
 

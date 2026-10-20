@@ -58,8 +58,8 @@ const team = [
 ]
 
 const features = [
-  { icon: Mic, title: 'Speak naturally', text: 'Yap captures the rhythm, intent, and nuance of everyday speech.' },
-  { icon: Move3d, title: 'See every sign', text: 'Render turns language into expressive Indian Sign Language in real time.' },
+  { icon: Mic, title: 'Speak naturally', text: 'Signova captures the rhythm, intent, and nuance of everyday speech.' },
+  { icon: Move3d, title: 'See every sign', text: 'Signova turns language into expressive Indian Sign Language in real time.' },
   { icon: Globe2, title: 'Reach more people', text: 'Make classrooms, clinics, and conversations feel open to everyone.' },
 ]
 
@@ -315,9 +315,9 @@ export default function Page() {
   return (
     <main className="site-shell">
       <header className="topbar">
-        <a className="brand" href="#top" aria-label="Yap and Render home">
+        <a className="brand" href="#top" aria-label="Signova home">
           <span className="brand-mark"><img src="/yap-render-logo-mark.png" alt="" /></span>
-          <span>yap &amp; render</span>
+          <span>Signova</span>
         </a>
         <nav className={menuOpen ? 'nav-links nav-open' : 'nav-links'} aria-label="Main navigation">
           <a href="#how-it-works" onClick={() => setMenuOpen(false)}>How it works</a>
@@ -336,7 +336,7 @@ export default function Page() {
         <section className="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-title" onMouseDown={(event) => event.stopPropagation()}>
           <button className="auth-close" onClick={() => setAuthOpen(false)} aria-label="Close account dialog"><X size={18} /></button>
           <span className="auth-mark"><Hand size={18} /></span>
-          <p className="eyebrow">Yap / Render account</p>
+          <p className="eyebrow">Signova account</p>
           <h2 id="auth-title">{account ? 'You are signed in.' : authMode === 'signup' ? 'Create your account.' : 'Welcome back.'}</h2>
           {account ? <><p className="auth-copy">Signed in as {account.email}</p><button className="auth-submit" onClick={signOut}>Sign out</button></> : <form onSubmit={submitAuth} className="auth-form">
             {authMode === 'signup' && <label>Name<input name="name" required autoComplete="name" placeholder="Your name" /></label>}
@@ -363,16 +363,16 @@ export default function Page() {
         <section className="about-modal" role="dialog" aria-modal="true" aria-labelledby="about-title" onMouseDown={(event) => event.stopPropagation()}>
           <button className="auth-close" onClick={() => setAboutOpen(false)} aria-label="Close About Us dialog"><X size={18} /></button>
           <div className="about-identity">
-            <span className="about-logo-mark"><img src="/yap-render-logo-mark.png" alt="Yap & Render logo" /></span>
-            <p className="about-logo-wordmark">yap <span>&amp;</span> render</p>
+            <span className="about-logo-mark"><img src="/yap-render-logo-mark.png" alt="Signova logo" /></span>
+            <p className="about-logo-wordmark">Signova</p>
           </div>
           <p className="eyebrow">About us</p>
           <h2 id="about-title">Making space for<br /><em>every voice.</em></h2>
-          <p className="about-copy">Yap &amp; Render is building a more connected future through language and technology.</p>
+          <p className="about-copy">Signova is building a more connected future through language and technology.</p>
           <p className="about-copy">We turn spoken words into Indian Sign Language, helping conversations feel more open and human.</p>
           <p className="about-copy">Our work brings together thoughtful design, accessible technology, and real community needs.</p>
           <p className="about-copy">Together, we are creating more ways for people to be heard, understood, and included.</p>
-          <div className="about-team" aria-label="Yap and Render team">
+          <div className="about-team" aria-label="Signova team">
             {team.map((member) => <div className="about-member" key={member.name}>
               <div className="about-member-avatar" aria-label={`${member.name} profile picture`}>{member.image ? <img src={member.image} alt="" /> : member.name.charAt(0)}</div>
               <strong>{member.name}</strong><span>{member.role}</span>
@@ -386,18 +386,18 @@ export default function Page() {
         <div className="hero-copy reveal">
           <p className="eyebrow"><span className="eyebrow-dot" /> Language, without limits</p>
           <h1 className="hero-title"><span>Say it.</span><span><em>See it.</em></span><span>Share it.</span></h1>
-          <p className="hero-lede">Yap & Render translates spoken language into Indian Sign Language, so more people can be part of the conversation.</p>
+          <p className="hero-lede">Signova translates spoken language into Indian Sign Language, so more people can be part of the conversation.</p>
           <div className="hero-actions">
             <a className="button button-dark" href="#try-it">See it in action <ArrowDownRight size={17} /></a>
             <a className="text-link" href="#how-it-works">Explore the idea <ArrowRight size={15} /></a>
           </div>
-          <div className="hero-highlights" aria-label="Yap and Render highlights"><span>ISL-first</span><span>Real-time signs</span><span>Human connection</span></div>
+          <div className="hero-highlights" aria-label="Signova highlights"><span>ISL-first</span><span>Real-time signs</span><span>Human connection</span></div>
           <p className="hero-note"><Sparkles size={14} /> Built with and for the Indian Deaf community</p>
         </div>
 
         <div className="avatar-stage reveal" id="try-it">
-          <div className="terminal-window" aria-label="Yap and Render live translation workspace">
-            <div className="terminal-chrome"><span className="chrome-dot red" /><span className="chrome-dot yellow" /><span className="chrome-dot green" /><span className="terminal-title">yap / render</span><button
+          <div className="terminal-window" aria-label="Signova live translation workspace">
+            <div className="terminal-chrome"><span className="chrome-dot red" /><span className="chrome-dot yellow" /><span className="chrome-dot green" /><span className="terminal-title">Signova</span><button
               type="button"
               className="terminal-maximize-toggle"
               onClick={() => setIsMaximized((maximized) => !maximized)}
@@ -467,7 +467,7 @@ export default function Page() {
       </section>
 
       <section className="feature-section section-pad" id="why-it-matters">
-        <div className="feature-heading reveal"><p className="eyebrow"><span className="eyebrow-dot" /> From yap to render</p><h2>One conversation.<br /><em>Two ways to be heard.</em></h2></div>
+        <div className="feature-heading reveal"><p className="eyebrow"><span className="eyebrow-dot" /> Signova</p><h2>One conversation.<br /><em>Two ways to be heard.</em></h2></div>
         <div className="feature-grid">{features.map(({ icon: Icon, title, text }, index) => <article className="feature-card reveal" key={title}><span className="feature-number">0{index + 1}</span><div className="feature-icon"><Icon size={22} /></div><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
@@ -475,7 +475,7 @@ export default function Page() {
 
       <section className="final-cta section-pad reveal" id="about"><div className="cta-symbol"><AudioLines size={28} /></div><p className="eyebrow">A more connected future</p><h2>Let&apos;s make room<br />for <em>every voice.</em></h2><p>We&apos;re early, curious, and building in the open.</p><button type="button" className="button button-coral" onClick={() => setAboutOpen(true)}>About Us <ArrowRight size={17} /></button></section>
 
-      <footer className="footer"><a className="brand" href="#top" aria-label="Yap and Render home"><span className="brand-mark"><img src="/yap-render-logo-mark.png" alt="" /></span><span>yap &amp; render</span></a><span>Made for more ways to connect.</span><span>© 2026 Yap & Render</span></footer>
+      <footer className="footer"><a className="brand" href="#top" aria-label="Signova home"><span className="brand-mark"><img src="/yap-render-logo-mark.png" alt="" /></span><span>Signova</span></a><span>Made for more ways to connect.</span><span>© 2026 Signova</span></footer>
     </main>
   )
 }

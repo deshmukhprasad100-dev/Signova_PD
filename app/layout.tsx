@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Yap & Render — Language, without limits',
-  description: 'Yap & Render translates spoken language into Indian Sign Language, making more conversations possible.',
+  title: 'Signova — Language, without limits',
+  description: 'Signova translates spoken language into Indian Sign Language, making more conversations possible.',
   generator: 'v0.app',
 }
 
